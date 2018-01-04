@@ -26,6 +26,7 @@ body {
     text-align: center;
     height: 1080px;
     background: #333 url("../images/vr-banner.jpg") top / cover no-repeat fixed;
+    white-space: nowrap;
 }
 
 #banner > h1 {
@@ -37,6 +38,7 @@ body {
 }
 
 .navbar {
+    z-index: 1;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -107,6 +109,8 @@ main {
 }
 
 #vive-img, #rift-img {
+    position: relative;
+    z-index: 0;
     transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
@@ -164,6 +168,16 @@ footer p a {
 @media screen and (max-width: 767px) {
     #banner h1 {
         font-size: 2em;
+    }
+
+    #vive-img, #rift-img {
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #vive-img {
+        margin-bottom: 30px;
     }
     
     .product {

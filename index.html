@@ -13,7 +13,7 @@
         <h1>Join the VR Revolution.</h1>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">VRevolution</a>
+        <a class="navbar-brand" href="#">VRevolution<span class="subtitle">Website template by Wilson Wong</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,28 +21,105 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Why VR? <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#why-section">Why VR?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Options</a>
+                    <a class="nav-link" href="#options-section">Options</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Future</a>
+                    <a class="nav-link" href="#showcase-heading">Showcase</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div>
+    <main class="container">
+        <div id="why-section" class="content-section">
+            <h2>Why VR?</h2>
+            <img src="images/in-vr-world.jpg" alt="Man standing in middle of street">
+            <div class="section-content">
+                <p>
+                    Virtual reality (VR) is the future. Whether it'd be getting a tour of a building yet to be built
+                    or playing games with never seen before immersion, this technology provides many
+                    new opportunities that has yet to be explored. While VR is still in its infancy, it
+                    is a fast-growing industry that developers can capitalize on right now. This is an industry that has
+                    a lot of room for innovation, and as such, many opportunities for developers to make a name for themselves.
+                    Rather than adding another app to the app store, developers may want to start thinking about the potential
+                    of developing the VR headsets because it is still quite an untapped market.
 
+                    Currently, many popular tools across many industries are implementing support for VR
+                    functionality. Game engines like Unity are working on tools that make it easy to create
+                    VR games. Even video tools like Adobe Premiere are adding support for VR videos. There is no doubt
+                    that the VR industry will only continue to grow as VR headsets become mainstream and affordable for
+                    everyday consumers.
+                </p>
+         
+            </div>
         </div>
-        <div>
-
+        <div id="options-section" class="content-section">
+            <h2>Options</h2>
+            <p>
+                There are many options when it comes to VR headsets. While cheap options
+                such as Google Cardboard or Samsung Gear exist, they do not provide the best
+                VR experience. For full immersion, you will either need to go with the Oculus Rift
+                or the HTC Vive. These two headsets are top of the line, though the Vive has enjoyed
+                more popularity due to its motion controls.
+            </p>
+            <div class="product-showcase">
+                <div class="product">
+                    <img id="rift-img" src="images/device-oculus.png" alt="Oculus Rift">
+                    <h2>Oculus Rift</h2>
+                </div>
+                <div class="product">
+                    <img id="vive-img" src="images/device-rift.png" alt="HTC Vive">
+                    <h2>HTC Vive</h2>
+                </div>
+            </div>
         </div>
-        <div>
-
+        <div id="showcase-section" class="content-section">
+            <h2 id="showcase-heading">Showcase</h2>
+            <div class="showcase">
+                <img src="images/tiltbrush.gif" alt="Tiltbrush Gif">
+                <div class="showcase-description">
+                    <h2>Tilt Brush</h2>
+                    <p>
+                        An incredible app from Google that allows VR users to paint anything they wish in three
+                        dimensions using their controllers. It comes with many effects and scene management
+                        tools that make the experience even more incredible.
+                    </p>
+                </div>
+            </div>
+            <div class="showcase">
+                <img src="images/irisvr.gif" alt="Tiltbrush Gif">
+                <div class="showcase-description">
+                    <h2>IrisVR</h2>
+                    <p>
+                        IrisVR brings virtual reality to architecture, engineering, and construction.
+                        It allows for a simple setup that creates immersive VR walkthroughs with the
+                        click of a button. It supports many applications like SketchUp, Revit, and Rhino.
+                    </p>
+                </div>
+            </div>
+            <div class="showcase">
+                <img src="images/vrchat.gif" alt="Tiltbrush Gif">
+                <div class="showcase-description">
+                    <h2>VRChat</h2>
+                    <p>
+                        A game reminiscent of Playstation Home, but for VR. It's an extremely popular app
+                        with a lot of customizability, including the ability to port in your own models to
+                        roleplay as in the game via Unity's SDK. The app is like living a second life, interacting
+                        with people close up across the world.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>
+            Open source on <a href="https://github.com/WilsonCWong/VRevolution">Github</a>
+            |
+            Website template by <a href="http://wilsonwong.me">Wilson Wong</a>
+        </p>
+    </footer>
     
     <script src="lib/smoothscroll.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -1,3 +1,21 @@
+body {
+    background-color: #1d1d1d;
+}
+
+.subtitle {
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.navbar-dark .navbar-brand {
+    color: #FFF;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: rgb(190, 190, 190);
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -21,4 +39,163 @@
 .navbar {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.sticky + main {
+    padding-top: 10px;
+}
+
+.content-section {
+    width: 100%;
+    padding: 23px;
+    margin: 50px 0;
+    overflow: hidden;
+    color: white;
+    background-color: #2d2d2d;
+} 
+
+.content-section img {
+    min-width: 150px;
+    max-width: 30%;
+    margin-top: 8px;
+}
+
+.content-section h2 {
+    text-align: center;
+}
+
+.section-content {
+    width: 100%;
+}
+
+#why-section img {
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+#why-section h2, #options-section h2, #showcase-section h2 {
+    margin-bottom: 30px;
+}
+
+
+.product-showcase {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.product {
+    display: inline-block;
+    width: 40%;
+}
+
+.product h2 {
+    font-size: 20px;
+}
+
+#vive-img {
+    margin-bottom: 40px;
+}
+
+#vive-img, #rift-img {
+    transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#vive-img:hover, #rift-img:hover {
+    -webkit-transform: scale(1.2); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: scale(1.2); /* IE 9 */
+          transform: scale(1.2); /* IE 10, Fx 16+, Op 12.1+ */
+}
+
+.showcase {
+    margin-bottom: 35px;
+}
+
+#showcase-section .showcase-description h2 {
+    margin-bottom: 0px;
+}
+
+.showcase-description {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.showcase-description h2, .showcase-description p {
+    text-align: left;
+    display: inline-block;
+}
+
+#showcase-section img {
+    min-width: 50%;
+    max-width: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: rgb(142, 219, 255);
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: rgb(66, 149, 187);
+}
+
+footer p a {
+    text-decoration: none !important;
+}
+
+
+@media screen and (max-width: 767px) {
+    #banner h1 {
+        font-size: 2em;
+    }
+    
+    .product {
+        margin: 0 auto;
+        display:block;
+    }
+
+    #showcase-section img {
+        min-width: 100%;
+        max-width: 100%;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .showcase-description {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .showcase-description p {
+        display: block;
+    }
+
+    .showcase-description h2 {
+        text-align: center;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    #banner h1 {
+        font-size: 1.5em;
+    }
 }
